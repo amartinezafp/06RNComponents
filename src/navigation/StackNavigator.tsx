@@ -5,6 +5,7 @@ import Animation101Screen from '../screens/Animation101Screen';
 import Animation102Screen from '../screens/Animation102Screen';
 import HomeScreen from '../screens/HomeScreen';
 import SwitchScreen from '../screens/SwitchScreen';
+import TextInputScreen from '../screens/TextInputScreen';
 
 
 const Stack = createStackNavigator();
@@ -52,6 +53,15 @@ export function StackNavigator() {
           headerShown:false
         }}
        />
+       <Stack.Screen name="TextInputScreen" component={TextInputScreen} 
+        options={{
+          cardStyle:{
+            backgroundColor:'white'
+          },
+          headerShown:false
+        }}
+       />
     </Stack.Navigator>
+    
   );
 }
