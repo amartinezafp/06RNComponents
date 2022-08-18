@@ -5,6 +5,7 @@ import {menuItems} from '../data/menuItems';
 import { styles } from '../theme/appTheme';
 import FlatlistMenuItem from '../components/FlatlistMenuItem';
 import HeaderTitle from '../components/HeaderTitle';
+import ItemSeparator from '../components/ItemSeparator';
 
 
 
@@ -12,11 +13,7 @@ const HomeScreen = () => {
 
   const {top} = useSafeAreaInsets();
 
-  const itemSeparator = () =>{
-    return (
-      <View style={{borderBottomWidth:1,opacity:0.4,marginVertical:8}}/>
-    )
-  }
+  
   return (
 
   
@@ -27,7 +24,7 @@ const HomeScreen = () => {
           renderItem={({item})=><FlatlistMenuItem menuItem={item}/>}
           keyExtractor={(item)=>item.name}
           ListHeaderComponent={()=>  <HeaderTitle title="Opciones de Menú"/>}
-          ItemSeparatorComponent={()=>itemSeparator()}
+          ItemSeparatorComponent={()=><ItemSeparator/>}
   
       />
       
