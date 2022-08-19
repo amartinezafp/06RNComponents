@@ -11,10 +11,10 @@ const useAnimation = () => {
           opacity,
           {
               toValue:1,
-              duration:3000,
+              duration:1000,
               useNativeDriver:true
           }
-      ).start(()=>console.log('Animación Terminó'));
+      ).start();
        
     }
   
