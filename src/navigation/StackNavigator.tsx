@@ -5,6 +5,7 @@ import Animation101Screen from '../screens/Animation101Screen';
 import Animation102Screen from '../screens/Animation102Screen';
 import CustomSectionList from '../screens/CustomSectionList';
 import HomeScreen from '../screens/HomeScreen';
+import ModalScreen from '../screens/ModalScreen';
 import PullToRefreshScreen from '../screens/PullToRefreshScreen';
 import SwitchScreen from '../screens/SwitchScreen';
 import TextInputScreen from '../screens/TextInputScreen';
@@ -72,6 +73,14 @@ export function StackNavigator() {
         }}
        />
        <Stack.Screen name="CustomSectionList" component={CustomSectionList} 
+        options={{
+          cardStyle:{
+            backgroundColor:'white'
+          },
+          headerShown:false
+        }}
+       />
+       <Stack.Screen name="ModalScreen" component={ModalScreen} 
         options={{
           cardStyle:{
             backgroundColor:'white'
