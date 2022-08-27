@@ -1,5 +1,6 @@
 import { createStackNavigator } from '@react-navigation/stack';
-import React from 'react';
+import * as React from 'react';
+
 import AlertScreen from '../screens/AlertScreen';
 import Animation101Screen from '../screens/Animation101Screen';
 import Animation102Screen from '../screens/Animation102Screen';
@@ -8,6 +9,7 @@ import HomeScreen from '../screens/HomeScreen';
 import InfiniteScrollScreen from '../screens/InfiniteScrollScreen';
 import ModalScreen from '../screens/ModalScreen';
 import PullToRefreshScreen from '../screens/PullToRefreshScreen';
+import SlidesScreen from '../screens/SlidesScreen';
 import SwitchScreen from '../screens/SwitchScreen';
 import TextInputScreen from '../screens/TextInputScreen';
 
@@ -90,6 +92,14 @@ export function StackNavigator() {
         }}
        />
        <Stack.Screen name="InfiniteScrollScreen" component={InfiniteScrollScreen} 
+        options={{
+          cardStyle:{
+            backgroundColor:'white'
+          },
+          headerShown:false
+        }}
+       />
+       <Stack.Screen name="SlidesScreen" component={SlidesScreen} 
         options={{
           cardStyle:{
             backgroundColor:'white'

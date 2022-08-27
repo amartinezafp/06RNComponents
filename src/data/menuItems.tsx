@@ -45,6 +45,11 @@ export const menuItems:MenuItem[] = [
     name:'InfiniteScroll',
     Icon: 'download-outline',
     component:'InfiniteScrollScreen'
+  },
+  {
+    name:'SlidesScreen',
+    Icon:'flower-outline',
+    component:'SlidesScreen'
   }
 ]
 
